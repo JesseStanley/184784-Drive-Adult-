@@ -9,7 +9,7 @@
     <StackPanel>
         <TextBox x:Name="txtQuestion">How old are you?</TextBox>
         <TextBox x:Name="txtAge"></TextBox>
-        <Button x:Name="btnAgeQuestion" />
+        <Button x:Name="btnQuestion" Content="Click me" Click="btnQuestion_Click"></Button>
         <Label x:Name="lblOutput"></Label>
     </StackPanel>
 </Window>
