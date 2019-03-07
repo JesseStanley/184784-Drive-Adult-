@@ -24,5 +24,26 @@ namespace _184784_Driving__Adult_
         {
             InitializeComponent();
         }
+        private void btnQuestion_Click(object sender, RoutedEventArgs e)
+        {
+            
+            int aAge;
+            int.TryParse(txtAge.Text, out aAge);
+            string output = "";
+        
+            if (aAge >= 16)
+            {
+                output = "You are allowed to drive";
+            }
+            if (aAge >= 18)
+            {
+                output +=",vote";
+            }
+            if (aAge >= 19)
+            {
+                output += " and drink";
+            }
+            MessageBox.Show(output);
+        }
     }
 }
